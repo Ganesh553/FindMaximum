@@ -15,13 +15,13 @@ public class MaximumObject <T extends Comparable<T>> {
 		Integer xInt=3, yInt=2, zInt=5;
 		Float xf1=10.2f, yf1=25.5f, zf1=25.5f;
 		String str1="Apple", str2="Pear", str3="Orange";
+		Double xd1=12.5, yd1=13.4, zd1=10.5;
+		
 		new MaximumObject(xInt, yInt, zInt).maximum();
 		new MaximumObject(xf1, yf1, zf1).maximum();
 		new MaximumObject(str1, str2, str3).maximum();
+		new MaximumObject(xd1, yd1, zd1).maximum();
 
-		new MaximumObject(xInt, yInt, zInt).maximum();
-		new MaximumObject(xf1, yf1, zf1).maximum();
-		new MaximumObject(xInt, yInt, zInt).maximum();
 	}
 	private T maximum() {
 		return MaximumObject.maximum(x, y, z);	
@@ -38,6 +38,6 @@ public class MaximumObject <T extends Comparable<T>> {
 	}
 
 	private static<T> void printMax(T x, T y, T z, T max) {
-		System.out.print(x+" "+y+" "+ z+" "+"The maximum value is: "+max);
+		System.out.println(x+" "+y+" "+ z+" "+"The maximum value is: "+max);
 	}
 }
