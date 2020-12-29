@@ -21,6 +21,7 @@ public class MaximumObject <T extends Comparable<T>> {
 		new MaximumObject(xf1, yf1, zf1).maximum();
 		new MaximumObject(str1, str2, str3).maximum();
 		new MaximumObject(xd1, yd1, zd1).maximum();
+
 	}
 	private T maximum() {
 		return MaximumObject.maximum(x, y, z);	
